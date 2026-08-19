@@ -6,6 +6,7 @@ mainwindow.minsize(424,340)
 mainwindow.maxsize(670,340)
 
 hello = tk.Label(text="Hello, World!")
+hello.pack(padx=150,pady=150)
 
 # :D
 tk.mainloop()
