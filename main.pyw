@@ -11,7 +11,7 @@ def copyurl(tocopy:str):
     mainwindow.clipboard_clear()
     mainwindow.clipboard_append(tocopy)
 
-hello = tk.Label(master=mainwindow,text="Hello, World!")
+hello = tk.Label(master=mainwindow,text="Please, insert a X/Twitter or a Tiktok media.")
 hello.place(relx=0.5, rely=0.4, anchor="center")
 
 textfield = tk.Entry(master=mainwindow)
