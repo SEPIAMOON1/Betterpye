@@ -7,8 +7,13 @@ def fixupurl(text):
     # This will replace the i on "tiktok" turning it into "tnktok". 
     if "x.com" in url or "twitter.com" in url:
         plataform = "X/Twitter"
-        xstart = url.find("x.com" or "twitter.com")
-        url = url[:8] + "fixup" + url[xstart:]
+        if not url.find("x.com") <= -1:
+            start = url.find("x.com")
+            url = url[:8] + "fixup" + url[start:]
+        else:
+            start = url.find("twitter.com")
+            url = url[:8] + "fx" + url[start:]
+        
         
     elif "tiktok.com" in url:
         plataform = "Tiktok"
